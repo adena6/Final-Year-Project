@@ -1,0 +1,53 @@
+/* App.css - Base Styles */
+:root {
+  --primary-color: #f8c537;
+  --primary-hover: #e0b431;
+  --text-dark: #1a202c;
+  --text-medium: #2d3748;
+  --text-light: #4a5568;
+  --bg-light: #f8f9fa;
+  --border-color: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--text-medium);
+  background-color: var(--bg-light);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 70px; /* Matches navbar height */
+}
+
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 70px;
+  }
+}
